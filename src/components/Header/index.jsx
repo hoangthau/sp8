@@ -3,11 +3,11 @@ import React from 'react';
 import './Header.scss';
 
 const Header = () => (
-  <div className="header">
-    <p className="header__logo">SP8</p>
+  <div className="header container">
+    <span className="header__logo">SP8</span>
     <div className="header__links">
-      <button>Pricing</button>
-      <button>Contact Us</button>
+      <a className="header__pricing" href="/pricing">Pricing</a>
+      <a className="header__book" href="#book-a-tour">Book a tour</a>
     </div>
   </div>
 );

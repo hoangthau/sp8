@@ -13,36 +13,36 @@
   "preloadPollInterval": 300,
   "productionSourceMaps": false,
   "entry": "index.js",
-  "siteRoot": "https://workinsp8.co",
   "plugins": [
     [
-      "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\node_modules\\react-static-plugin-source-filesystem\\node.api.js",
+      "C:\\Users\\Dell\\Documents\\Projects\\static\\sp8\\node_modules\\react-static-plugin-source-filesystem\\node.api.js",
       {
-        "location": "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\src\\pages"
+        "location": "C:\\Users\\Dell\\Documents\\Projects\\static\\sp8\\src\\pages"
       }
     ],
-    "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\node_modules\\react-static-plugin-reach-router\\browser.api.js",
-    "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\node_modules\\react-static-plugin-sitemap\\dist\\node.api.js",
+    "C:\\Users\\Dell\\Documents\\Projects\\static\\sp8\\node_modules\\react-static-plugin-reach-router\\browser.api.js",
+    "C:\\Users\\Dell\\Documents\\Projects\\static\\sp8\\node_modules\\react-static-plugin-sitemap\\dist\\node.api.js",
     "react-static-plugin-sass",
-    "C:\\Users\\Dell\\Documents\\Projects\\static\\first"
+    "C:\\Users\\Dell\\Documents\\Projects\\static\\sp8"
   ],
   "paths": {
-    "ROOT": "C:\\Users\\Dell\\Documents\\Projects\\static\\first",
-    "SRC": "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\src",
-    "DIST": "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\dist",
-    "ASSETS": "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\dist",
-    "PLUGINS": "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\plugins",
-    "TEMP": "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\tmp",
-    "ARTIFACTS": "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\artifacts",
-    "PUBLIC": "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\public",
-    "NODE_MODULES": "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\node_modules",
-    "EXCLUDE_MODULES": "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\node_modules",
-    "PACKAGE": "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\package.json",
-    "HTML_TEMPLATE": "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\dist\\index.html",
-    "STATIC_DATA": "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\dist\\staticData"
+    "ROOT": "C:\\Users\\Dell\\Documents\\Projects\\static\\sp8",
+    "SRC": "C:\\Users\\Dell\\Documents\\Projects\\static\\sp8\\src",
+    "DIST": "C:\\Users\\Dell\\Documents\\Projects\\static\\sp8\\dist",
+    "ASSETS": "C:\\Users\\Dell\\Documents\\Projects\\static\\sp8\\dist",
+    "PLUGINS": "C:\\Users\\Dell\\Documents\\Projects\\static\\sp8\\plugins",
+    "TEMP": "C:\\Users\\Dell\\Documents\\Projects\\static\\sp8\\tmp",
+    "ARTIFACTS": "C:\\Users\\Dell\\Documents\\Projects\\static\\sp8\\artifacts",
+    "PUBLIC": "C:\\Users\\Dell\\Documents\\Projects\\static\\sp8\\public",
+    "NODE_MODULES": "C:\\Users\\Dell\\Documents\\Projects\\static\\sp8\\node_modules",
+    "EXCLUDE_MODULES": "C:\\Users\\Dell\\Documents\\Projects\\static\\sp8\\node_modules",
+    "PACKAGE": "C:\\Users\\Dell\\Documents\\Projects\\static\\sp8\\package.json",
+    "HTML_TEMPLATE": "C:\\Users\\Dell\\Documents\\Projects\\static\\sp8\\dist\\index.html",
+    "STATIC_DATA": "C:\\Users\\Dell\\Documents\\Projects\\static\\sp8\\dist\\staticData"
   },
+  "siteRoot": "",
   "basePath": "",
-  "publicPath": "https://workinsp8.co/",
+  "publicPath": "/",
   "assetsPath": "",
   "extractCssChunks": false,
   "inlineCss": false,

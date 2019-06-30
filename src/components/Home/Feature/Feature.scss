@@ -1,0 +1,29 @@
+.feature-focus {
+  &__img {
+    background-image: url('./focus.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+}
+
+.feature-amenity {
+  &__img {
+    background-image: url('./amenity.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+}
+
+.feature-term {
+  &__img {
+    background-image: url('./term.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+}
