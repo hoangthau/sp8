@@ -1,0 +1,62 @@
+{
+  "prefetchRate": 5,
+  "maxThreads": null,
+  "disableRoutePrefixing": false,
+  "outputFileRate": 100,
+  "extensions": [
+    ".js",
+    ".jsx"
+  ],
+  "minLoadTime": 200,
+  "disablePreload": false,
+  "disableRuntime": false,
+  "preloadPollInterval": 300,
+  "productionSourceMaps": false,
+  "entry": "index.js",
+  "siteRoot": "https://workinsp8.co",
+  "plugins": [
+    [
+      "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\node_modules\\react-static-plugin-source-filesystem\\node.api.js",
+      {
+        "location": "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\src\\pages"
+      }
+    ],
+    "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\node_modules\\react-static-plugin-reach-router\\browser.api.js",
+    "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\node_modules\\react-static-plugin-sitemap\\dist\\node.api.js",
+    "react-static-plugin-sass",
+    "C:\\Users\\Dell\\Documents\\Projects\\static\\first"
+  ],
+  "paths": {
+    "ROOT": "C:\\Users\\Dell\\Documents\\Projects\\static\\first",
+    "SRC": "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\src",
+    "DIST": "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\dist",
+    "ASSETS": "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\dist",
+    "PLUGINS": "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\plugins",
+    "TEMP": "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\tmp",
+    "ARTIFACTS": "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\artifacts",
+    "PUBLIC": "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\public",
+    "NODE_MODULES": "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\node_modules",
+    "EXCLUDE_MODULES": "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\node_modules",
+    "PACKAGE": "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\package.json",
+    "HTML_TEMPLATE": "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\dist\\index.html",
+    "STATIC_DATA": "C:\\Users\\Dell\\Documents\\Projects\\static\\first\\dist\\staticData"
+  },
+  "basePath": "",
+  "publicPath": "https://workinsp8.co/",
+  "assetsPath": "",
+  "extractCssChunks": false,
+  "inlineCss": false,
+  "babelExcludes": [],
+  "devServer": {
+    "host": "localhost",
+    "port": 3000
+  },
+  "terser": {
+    "terserOptions": {
+      "mangle": {},
+      "parse": {},
+      "compress": {},
+      "output": {}
+    }
+  }
+}
