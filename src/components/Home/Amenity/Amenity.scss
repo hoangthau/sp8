@@ -1,0 +1,50 @@
+.amenity {
+  padding-bottom: 120px;
+  border-bottom: 1px solid #e6e5e5;
+  h2 {
+    font-size: 36px;
+  }
+
+  p {
+    margin: 20px 0 64px 0;
+    color: #656360;
+  }
+
+  h3 {
+    font-size: 24px;
+    margin-top: 24px;
+  }
+
+  ul {
+    padding-left: 20px;
+    margin-top: 12px;
+    li {
+      display: list-item;
+    }
+  }
+
+  &__space-img {
+    background-image: url('./space.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 240px;
+  }
+
+  &__services-img {
+    background-image: url('./services.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 240px;
+  }
+
+  &__perks-img {
+    background-image: url('./perk.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 240px;
+  }
+}
+

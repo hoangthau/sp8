@@ -8,8 +8,8 @@ const HomePage = ({ language }) => {
   return (
     <React.Fragment>
       <Head>
-        <title>{language === 'ru'? 'Russian': 'English'}</title>
-        <meta name="description" content="aaa" />
+        <title>{language === 'ru'? 'Russian': 'SP8'}</title>
+        <meta name="description" content="SP8" />
         <meta name="author" content="Quoine" />
         <meta name="robots" content="all" />
 
@@ -26,6 +26,6 @@ const HomePage = ({ language }) => {
       <Home />
     </React.Fragment>
   );
-};
+}
 
 export default withRouteData(HomePage);

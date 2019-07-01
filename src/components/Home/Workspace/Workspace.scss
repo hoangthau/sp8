@@ -1,0 +1,47 @@
+.workspace {
+  margin-top: 120px;
+
+  h2, p {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  p {
+    margin: 20px 0 64px 0;
+    color: #656360;
+  }
+
+  .gallery {
+    display: flex;
+  }
+
+  .left {
+    padding-right: 0;
+  }
+
+  .right {
+    padding-left: 0;
+  }
+
+  .right-1, .right-2 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50%;
+  }
+
+  .right-1 {
+    background-image: url('./terms.jpg');
+  }
+
+  .right-2 {
+    background-image: url('./amenities.jpg');
+  }
+
+  img {
+    height: 100%;
+  }
+}

@@ -1,0 +1,44 @@
+.book-tour {
+  max-width: 360px;
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 120px;
+
+  h2 {
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+  }
+
+  p {
+    padding: 20px 0 40px 0;
+    text-align: center;
+    margin: 0;
+  }
+
+  input {
+    border-radius: 4px;
+    border: solid 1px #979797;
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    padding: 12px 16px;
+  }
+
+  .input-group {
+    display: flex;
+    margin-top: -20px;
+    input:first-child {
+      margin-right: 20px;
+    }
+  }
+
+  .submit {
+    border-radius: 4px;
+    background-color: #91683d;
+    color: #fff;
+    padding: 16px 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+}

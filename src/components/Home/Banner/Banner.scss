@@ -1,9 +1,48 @@
 .banner {
-  &__image {
-    background-image: url('./bg.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 500px;
+
+  h1 {
+    font-size: 44px;
+    font-weight: 600;
+  }
+
+  &__book {
+    border-radius: 4px;
+    background-color: #91683d;
+    padding: 16px 32px;
+    color: #fff;
+    margin-right: 48px;
+    display: inline-block;
+  }
+
+  &__pricing {
+    color: #91683d;
+    border-bottom: 1px solid #91683d;
+    padding-bottom: 10px;
+    display: inline-block;
+  }
+
+  p {
+    margin-top: 20px;
+    margin-bottom: 48px;
+    color: #656360;
+    font-size: 20px;
+  }
+
+  .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-right: 100px;
+  }
+
+  &__img {
+    margin-top: 48px;
+  }
+}
+
+@media(min-width: 768px) {
+  .banner__img {
+    margin-top: 0;
   }
 }

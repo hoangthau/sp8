@@ -1,9 +1,11 @@
 import React from 'react';
 
+import './Innovate.scss';
+
 const Innovate = () => (
   <div className="innovate container">
     <div className="row">
-      <div className="col-md-6">
+      <div className="col-md-4">
         <h2>A space to innovate</h2>
       </div>
       <div className="col-md-6">

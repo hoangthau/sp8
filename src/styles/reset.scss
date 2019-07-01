@@ -1,0 +1,87 @@
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6, figure, ol, ul {
+  margin: 0;
+  padding: 0;
+}
+main, li {
+  display: block;
+}
+
+strong, em, b, i {
+  font-weight: inherit;
+  font-style: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button, input, select, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  font: inherit;
+  background: none;
+  color: inherit;
+  padding: 0;
+  appearance: none;
+  text-transform: inherit;
+}
+textarea {
+  resize: none;
+}
+select::-ms-expand {
+  display: none;
+}
+::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+:focus {
+  outline: 0;
+}
+img {
+  max-width: 100%;
+}
+svg {
+  fill: currentColor;
+  vertical-align: top;
+}
+iframe {
+  display: block;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+input::-ms-clear {
+  display: none;
+}
+input[type=date]::-webkit-inner-spin-button {
+  display: none;
+}
+input {
+  min-width: 0;
+}
+button {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: default;
+  pointer-events: none;
+}
+hr {
+  border: none;
+}

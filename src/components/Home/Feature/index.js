@@ -1,12 +1,18 @@
 import React from 'react';
 
+import Focus from './focus.jpg';
+import Amenities from './amenities.jpg';
+import Terms from './terms.jpg';
+
 import './Feature.scss';
 
 const Feature = () => (
   <div className="features container">
-    <div className="row feature-focus">
-      <div className="col-md-6 feature-focus__img" />
-      <div className="col-md-6 feature-focus__desc">
+    <div className="row features-focus item">
+      <div className="col-md-6 features-focus__img">
+        <img src={Focus} alt="Amenities" />
+      </div>
+      <div className="col-md-6 focus-desc">
         <h2>One focus space</h2>
         <p>We focus on what matters for a winning work space. </p>
 
@@ -26,8 +32,8 @@ const Feature = () => (
         <a>View the space</a>
       </div>
     </div>
-    <div className="row feature-amenity">
-      <div className="col-md-6 feature-amenity__desc">
+    <div className="row features-amenity item">
+      <div className="col-md-6 amenity-desc">
         <h2>Full amenities</h2>
         <p>
           We focus on amenities which matter to you. Everything else you need,
@@ -46,11 +52,15 @@ const Feature = () => (
         </p>
         <a>See all amenities</a>
       </div>
-      <div className="col-md-6 feature-amenity__img" />
+      <div className="col-md-6 features-amenity__img">
+        <img src={Amenities} alt="Amenities" />
+      </div>
     </div>
-    <div className="row feature-term">
-      <div className="col-md-6 feature-term__img" />
-      <div className="col-md-6 feature-term__desc">
+    <div className="row features-term item">
+      <div className="col-md-6 features-term__img">
+        <img src={Terms} alt="Amenities" />
+      </div>
+      <div className="col-md-6 terms-desc">
         <h2>Flexible terms</h2>
         <p>We focus on giving you the best options to grow.</p>
 

@@ -8,9 +8,34 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
 }
 
 a {
   text-decoration: none;
   color: #000;
+  transition: all 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: #656360;
 }
