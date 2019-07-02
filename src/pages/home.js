@@ -8,7 +8,7 @@ const HomePage = ({ language }) => {
   return (
     <React.Fragment>
       <Head>
-        <title>{language === 'ru'? 'Russian': 'SP8'}</title>
+        <title>{language === 'ru' ? 'Russian' : 'SP8'}</title>
         <meta name="description" content="SP8" />
         <meta name="author" content="Quoine" />
         <meta name="robots" content="all" />
@@ -22,10 +22,22 @@ const HomePage = ({ language }) => {
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@QuoineGlobal" />
         <meta name="twitter:creator" content="@QuoineGlobal" />
+
+        <link
+          rel="stylesheet"
+          type="text/css"
+          charset="UTF-8"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+        />
       </Head>
       <Home />
     </React.Fragment>
   );
-}
+};
 
 export default withRouteData(HomePage);

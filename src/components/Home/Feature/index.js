@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Focus from './focus.jpg';
-import Amenities from './amenities.jpg';
-import Terms from './terms.jpg';
+import Focus from '../assets/focus.jpg';
+import Amenities from '../assets/amenities.jpg';
+import Terms from '../assets/terms.jpg';
 
 import './Feature.scss';
 

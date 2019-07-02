@@ -25,7 +25,7 @@
   }
 
   &__space-img {
-    background-image: url('./space.jpg');
+    background-image: url('../assets/space.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -33,7 +33,7 @@
   }
 
   &__services-img {
-    background-image: url('./services.jpg');
+    background-image: url('../assets/services.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -41,11 +41,23 @@
   }
 
   &__perks-img {
-    background-image: url('./perk.jpg');
+    background-image: url('../assets/perk.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 240px;
+  }
+
+  &__desc {
+    margin-bottom: 40px;
+  }
+}
+
+@media(min-width: 768px) {
+  .amenity {
+    &__desc {
+      margin-bottom: 0
+    }
   }
 }
 

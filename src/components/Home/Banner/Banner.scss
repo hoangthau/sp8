@@ -10,7 +10,7 @@
     background-color: #91683d;
     padding: 16px 32px;
     color: #fff;
-    margin-right: 48px;
+    margin-right: 20px;
     display: inline-block;
   }
 
@@ -33,7 +33,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    padding-right: 100px;
+    padding-right: 0;
   }
 
   &__img {
@@ -44,5 +44,12 @@
 @media(min-width: 768px) {
   .banner__img {
     margin-top: 0;
+  }
+  .banner__book {
+    margin-right: 48px;
+  }
+
+  .banner .left {
+    padding-right: 100px;
   }
 }

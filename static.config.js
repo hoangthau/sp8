@@ -1,7 +1,9 @@
 import path from 'path';
+import template from './src/template';
 
 export default {
   //siteRoot: 'https://workinsp8.co',
+  Document: template,
   getRoutes: () => {
     return [
       {

@@ -18,7 +18,8 @@
     "react-static-plugin-reach-router": "^7.0.0",
     "react-static-plugin-sitemap": "^7.0.0",
     "react-static-plugin-source-filesystem": "^7.0.0",
-    "react-static-plugin-sass": "^7.1.0"
+    "react-static-plugin-sass": "^7.1.0",
+    "react-slick": "0.24.0"
   },
   "devDependencies": {
     "autoprefixer": "^8.5.0",

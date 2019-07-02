@@ -1,7 +1,9 @@
 .workspace {
   margin-top: 120px;
+  position: relative;
 
-  h2, p {
+  h2,
+  p {
     text-align: center;
   }
 
@@ -26,7 +28,8 @@
     padding-left: 0;
   }
 
-  .right-1, .right-2 {
+  .right-1,
+  .right-2 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -34,14 +37,58 @@
   }
 
   .right-1 {
-    background-image: url('./terms.jpg');
+    background-image: url('../assets/terms.jpg');
   }
 
   .right-2 {
-    background-image: url('./amenities.jpg');
+    background-image: url('../assets/amenities.jpg');
   }
+}
+
+.view-photos {
+  position: absolute;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #91683d;
+  right: 30px;
+  bottom: 12px;
+  padding: 12px 16px;
+  display: none;
+}
+
+.slider-mobile {
+  display: block;
+  padding: 0 50px;
+  background: #e3e1e2;
+  
+  .slick-dots li button:before {
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  .slick-next:before, .slick-prev:before {
+    display: none;
+  }
+}
+
+.gallery-overview {
+  display: none !important;
 
   img {
     height: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .slider-mobile {
+    display: none;
+  }
+
+  .gallery-overview {
+    display: flex !important;
+  }
+
+  .view-photos {
+    display: inline-block;
   }
 }

@@ -1,0 +1,41 @@
+.gallery {
+  max-width: 1000px;
+  margin: auto;
+
+  img {
+    margin: auto;
+  }
+
+  .slider1 {
+    .slick-next:before, .slick-prev:before {
+      font-size: 70px;
+    }
+    .slick-prev {
+      left: -50px;
+    }
+    .slick-next {
+      right: -50px;
+    }
+  }
+
+  .slider2 {
+    .slick-slide {
+      opacity: 0.5;
+    }
+    .slick-current.slick-active {
+      opacity: 1;
+    }
+
+    .slick-next, .slick-prev {
+      display: none !important;
+    }
+  }
+}
+
+.modal-gallery {
+  background-color: #000;
+
+  .close {
+    color: #fff;
+  }
+}

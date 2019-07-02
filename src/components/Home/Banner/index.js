@@ -2,7 +2,7 @@ import React from 'react';
 
 import Book from 'components/Home/Book';
 
-import BannerImg from './banner.jpg';
+import BannerImg from '../assets/banner.jpg';
 import BookModal from '../BookModal';
 import './Banner.scss';
 

@@ -21,11 +21,19 @@
   }
 }
 
+.amenity-desc {
+  margin-bottom: 40px;
+}
+
 @media (min-width: 768px) {
   .features {
     .focus-desc,
     .terms-desc {
       padding-left: 100px;
     }
+  }
+
+  .amenity-desc {
+    margin-bottom: 0;
   }
 }
