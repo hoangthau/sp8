@@ -2,7 +2,6 @@ import React from 'react';
 
 import Book from 'components/Home/Book';
 
-import BannerImg from '../assets/banner.jpg';
 import BookModal from '../BookModal';
 import './Banner.scss';
 
@@ -42,7 +41,7 @@ class Banner extends React.PureComponent {
               </div>
             </div>
             <div className="col-md-6 banner__img">
-              <img src={BannerImg} alt="banner" />
+              <img src='/assets/banner.jpg'  alt="banner" />
             </div>
           </div>
         </div>

@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 
-import img1 from '../assets/amenities.jpg';
-import img2 from '../assets/focus.jpg';
-import img3 from '../assets/terms.jpg';
-import img4 from '../assets/amenities.jpg';
-import img5 from '../assets/focus.jpg';
-import img6 from '../assets/terms.jpg';
-
 import './Gallery.scss';
 
 class Gallery extends Component {
@@ -35,22 +28,22 @@ class Gallery extends Component {
           className="slider1"
         >
           <div>
-            <img src={img1} alt="img" />
+            <img src='/assets/amenities.jpg' alt="img" />
           </div>
           <div>
-            <img src={img2} alt="img" />
+            <img src='/assets/focus.jpg' alt="img" />
           </div>
           <div>
-            <img src={img3} alt="img" />
+            <img src='/assets/terms.jpg' alt="img" />
           </div>
           <div>
-            <img src={img4} alt="img" />
+            <img src='/assets/amenities.jpg' alt="img" />
           </div>
           <div>
-            <img src={img5} alt="img" />
+            <img src='/assets/focus.jpg' alt="img" />
           </div>
           <div>
-            <img src={img6} alt="img" />
+            <img src='/assets/terms.jpg' alt="img" />
           </div>
         </Slider>
         <Slider
@@ -62,22 +55,22 @@ class Gallery extends Component {
           className="slider2"
         >
           <div>
-            <img src={img1} alt="img" />
+            <img src='/assets/amenities.jpg' alt="img" />
           </div>
           <div>
-            <img src={img2} alt="img" />
+            <img src='/assets/focus.jpg' alt="img" />
           </div>
           <div>
-            <img src={img3} alt="img" />
+            <img src='/assets/terms.jpg' alt="img" />
           </div>
           <div>
-            <img src={img4} alt="img" />
+            <img src='/assets/amenities.jpg' alt="img" />
           </div>
           <div>
-            <img src={img5} alt="img" />
+            <img src='/assets/focus.jpg' alt="img" />
           </div>
           <div>
-            <img src={img6} alt="img" />
+            <img src='/assets/terms.jpg' alt="img" />
           </div>
         </Slider>
       </div>

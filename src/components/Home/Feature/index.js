@@ -1,16 +1,12 @@
 import React from 'react';
 
-import Focus from '../assets/focus.jpg';
-import Amenities from '../assets/amenities.jpg';
-import Terms from '../assets/terms.jpg';
-
 import './Feature.scss';
 
 const Feature = () => (
   <div className="features container">
     <div className="row features-focus item">
       <div className="col-md-6 features-focus__img">
-        <img src={Focus} alt="Amenities" />
+        <img src='/assets/focus.jpg' alt="Amenities" />
       </div>
       <div className="col-md-6 focus-desc">
         <h2>One focus space</h2>
@@ -53,12 +49,12 @@ const Feature = () => (
         <a>See all amenities</a>
       </div>
       <div className="col-md-6 features-amenity__img">
-        <img src={Amenities} alt="Amenities" />
+        <img src='/assets/amenities.jpg' alt="Amenities" />
       </div>
     </div>
     <div className="row features-term item">
       <div className="col-md-6 features-term__img">
-        <img src={Terms} alt="Amenities" />
+        <img src='/assets/terms.jpg' alt="Amenities" />
       </div>
       <div className="col-md-6 terms-desc">
         <h2>Flexible terms</h2>

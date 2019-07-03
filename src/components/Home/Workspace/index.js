@@ -1,16 +1,8 @@
 import React from 'react';
 import Slider from 'react-slick';
 
-import img1 from '../assets/amenities.jpg';
-import img2 from '../assets/focus.jpg';
-import img3 from '../assets/terms.jpg';
-import img4 from '../assets/amenities.jpg';
-import img5 from '../assets/focus.jpg';
-import img6 from '../assets/terms.jpg';
-
 import BookModal from 'components/Home/BookModal';
 import Gallery from '../Gallery';
-import Left from '../assets/banner.jpg';
 
 import './Workspace.scss';
 
@@ -46,7 +38,7 @@ class Workspace extends React.PureComponent {
           <p>View the SP8 gallery.</p>
           <div className="row gallery-overview">
             <div className="col-md-6 left">
-              <img src={Left} alt="left" />
+              <img src='/assets/banner.jpg' alt="left" />
             </div>
             <div className="col-md-6 right">
               <div className="right-1" />
@@ -55,16 +47,24 @@ class Workspace extends React.PureComponent {
           </div>
           <div className="slider-mobile">
             <Slider {...settings}>
-              <div>
-                <img src={img1} />
-              </div>
-              <div>
-                <img src={img2} />
-              </div><div>
-                <img src={img3} />
-              </div><div>
-                <img src={img4} />
-              </div>
+            <div>
+            <img src='/assets/amenities.jpg' alt="img" />
+          </div>
+          <div>
+            <img src='/assets/focus.jpg' alt="img" />
+          </div>
+          <div>
+            <img src='/assets/terms.jpg' alt="img" />
+          </div>
+          <div>
+            <img src='/assets/amenities.jpg' alt="img" />
+          </div>
+          <div>
+            <img src='/assets/focus.jpg' alt="img" />
+          </div>
+          <div>
+            <img src='/assets/terms.jpg' alt="img" />
+          </div>
             </Slider>
           </div>
           <button className="view-photos" onClick={this.toggle}>
