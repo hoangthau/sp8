@@ -18,3 +18,4 @@ _translation/node_modules
 _translation/*.csv
 
 .DS_Store
+artifacts
