@@ -5,6 +5,8 @@ import Book from 'components/Home/Book';
 import BookModal from '../BookModal';
 import './Banner.scss';
 
+import translate from '../translate';
+
 class Banner extends React.PureComponent {
   state = {
     open: false
@@ -36,7 +38,7 @@ class Banner extends React.PureComponent {
                   Book a tour
                 </button>
                 <a className="banner__pricing" href="#book-a-tour">
-                  See pricing
+                  {translate('seePrice')}
                 </a>
               </div>
             </div>

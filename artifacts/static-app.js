@@ -1119,7 +1119,80 @@ function (_React$PureComponent) {
 // EXTERNAL MODULE: C:/Users/Dell/Documents/Projects/static/sp8/src/components/Home/Banner/Banner.scss
 var Banner_Banner = __webpack_require__(55);
 
+// CONCATENATED MODULE: C:/Users/Dell/Documents/Projects/static/sp8/src/translate/index.js
+/* eslint-disable */
+ // default
+
+var languages = ['en', 'vi']; // all the languages this app can support
+
+var supportedLanguages = languages;
+var translate_language = 'en';
+var defaultLanguage = 'en';
+var get = function get() {
+  return translate_language;
+};
+var set = function set(value) {
+  if (supportedLanguages.indexOf(value) !== -1) {
+    translate_language = value;
+  } else {
+    translate_language = 'en';
+  }
+};
+var tags = ['<br />', '<br/>', '<a', '<span', '<strong'];
+
+var translate_translate = function translate(translation, filename) {
+  return function (key, template) {
+    // texts: multiple translations of a key
+    var texts = translation[key];
+
+    if (!texts) {
+      // eslint-disable-next-line no-console
+      return key;
+    } // text: local translation of a key
+
+
+    var text = texts[translate_language] || texts[defaultLanguage];
+
+    if (!text) {
+      // eslint-disable-next-line no-console
+      // we will use english translation instead of returning key
+      return translation[key]['en'];
+    } // if has template
+
+
+    if (template) {
+      text = Object.keys(template).reduce(function (result, keyT) {
+        return result.replace(new RegExp("{{ ".concat(keyT, " }}"), 'g'), template[keyT]);
+      }, text);
+    } // if include dangerous HTML
+
+
+    if (tags.some(function (tag) {
+      return text.indexOf(tag) !== -1;
+    })) {
+      return external_react_default.a.createElement("span", {
+        dangerouslySetInnerHTML: {
+          __html: text
+        }
+      });
+    } // else
+
+
+    return text;
+  };
+};
+
+/* harmony default export */ var src_translate = (translate_translate);
+// CONCATENATED MODULE: C:/Users/Dell/Documents/Projects/static/sp8/src/components/Home/translate.js
+
+/* harmony default export */ var Home_translate = (src_translate({
+  seePrice: {
+    en: 'See pricing',
+    vi: 'Xem giá'
+  }
+}));
 // CONCATENATED MODULE: C:/Users/Dell/Documents/Projects/static/sp8/src/components/Home/Banner/index.js
+
 
 
 
@@ -1185,7 +1258,7 @@ function (_React$PureComponent) {
       }, "Book a tour"), external_react_default.a.createElement("a", {
         className: "banner__pricing",
         href: "#book-a-tour"
-      }, "See pricing"))), external_react_default.a.createElement("div", {
+      }, Home_translate('seePrice')))), external_react_default.a.createElement("div", {
         className: "col-md-6 banner__img"
       }, external_react_default.a.createElement("img", {
         src: "/assets/banner.jpg",
@@ -1551,7 +1624,10 @@ var components_Footer_Footer = function Footer() {
 
 
 
-var Home_Home = function Home() {
+
+var Home_Home = function Home(_ref) {
+  var language = _ref.language;
+  set(language);
   return external_react_default.a.createElement(external_react_default.a.Fragment, null, external_react_default.a.createElement(components_Header, null), external_react_default.a.createElement(Home_Banner, null), external_react_default.a.createElement(Home_Innovate, null), external_react_default.a.createElement(Home_Feature, null), external_react_default.a.createElement(Home_Amenity, null), external_react_default.a.createElement(Home_Workspace, null), external_react_default.a.createElement(Home_Book, null), external_react_default.a.createElement(components_Footer, null));
 };
 
@@ -1563,7 +1639,7 @@ var Home_Home = function Home() {
 
 var home_HomePage = function HomePage(_ref) {
   var language = _ref.language;
-  return external_react_default.a.createElement(external_react_default.a.Fragment, null, external_react_default.a.createElement(external_react_static_["Head"], null, external_react_default.a.createElement("title", null, language === 'ru' ? 'Russian' : 'SP8'), external_react_default.a.createElement("meta", {
+  return external_react_default.a.createElement(external_react_default.a.Fragment, null, external_react_default.a.createElement(external_react_static_["Head"], null, external_react_default.a.createElement("title", null, "SP8"), external_react_default.a.createElement("meta", {
     name: "description",
     content: "SP8"
   }), external_react_default.a.createElement("meta", {
@@ -1602,7 +1678,9 @@ var home_HomePage = function HomePage(_ref) {
     rel: "stylesheet",
     type: "text/css",
     href: "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
-  })), external_react_default.a.createElement(components_Home, null));
+  })), external_react_default.a.createElement(components_Home, {
+    language: language
+  }));
 };
 
 /* harmony default export */ var home = __webpack_exports__["default"] = (Object(external_react_static_["withRouteData"])(home_HomePage));
@@ -1962,14 +2040,14 @@ var t_0 = C_Users_Dell_Documents_Projects_static_sp8_node_modules_react_universa
 }), universalOptions);
 t_0.template = '../src/pages/NotFound';
 var t_1 = C_Users_Dell_Documents_Projects_static_sp8_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
-  id: "../src/pages/about",
+  id: "../src/pages/about.js",
   load: function load() {
     return Promise.all([Promise.resolve(/* import() | src/pages/about */).then(__webpack_require__.bind(null, 28))]).then(function (proms) {
       return proms[0];
     });
   },
   path: function path() {
-    return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '../src/pages/about');
+    return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '../src/pages/about.js');
   },
   resolve: function resolve() {
     return /*require.resolve*/(28);
@@ -1978,7 +2056,7 @@ var t_1 = C_Users_Dell_Documents_Projects_static_sp8_node_modules_react_universa
     return "src/pages/about";
   }
 }), universalOptions);
-t_1.template = '../src/pages/about';
+t_1.template = '../src/pages/about.js';
 var t_2 = C_Users_Dell_Documents_Projects_static_sp8_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "../src/pages/home.js",
   load: function load() {
@@ -2036,7 +2114,7 @@ t_4.template = '../src/pages/NotFound.js'; // Template Map
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   '../src/pages/NotFound': t_0,
-  '../src/pages/about': t_1,
+  '../src/pages/about.js': t_1,
   '../src/pages/home.js': t_2,
   '../src/pages/home': t_3,
   '../src/pages/NotFound.js': t_4 // Not Found Template
@@ -2854,7 +2932,7 @@ module.exports = function (originalModule) {
 
 exports = module.exports = __webpack_require__(1)(false);
 // Module
-exports.push([module.i, "* {\n  scroll-behavior: smooth; }\n\nbody {\n  font-family: -apple-system ,BlinkMacSystemFont, \"Segoe UI\", \"Roboto\", sans-serif;\n  font-size: 16px;\n  margin: 0;\n  padding: 0;\n  line-height: 1.5; }\n\nh1, h2, h3, h4, h5, h6 {\n  font-weight: 600; }\n\na {\n  text-decoration: none;\n  color: #000;\n  -webkit-transition: all 0.5s;\n  -o-transition: all 0.5s;\n  transition: all 0.5s;\n  cursor: pointer; }\n  a:hover {\n    opacity: 0.6; }\n\nimg {\n  max-width: 100%; }\n\nul {\n  margin: 0;\n  padding: 0; }\n\np {\n  color: #656360; }\n", ""]);
+exports.push([module.i, "* {\n  scroll-behavior: smooth; }\n\nbody {\n  font-family: \"IBM Plex Sans\", -apple-system ,BlinkMacSystemFont, \"Segoe UI\", \"Roboto\", sans-serif;\n  font-size: 16px;\n  margin: 0;\n  padding: 0;\n  line-height: 1.5; }\n\nh1, h2, h3, h4, h5, h6 {\n  font-weight: 600; }\n\na {\n  text-decoration: none;\n  color: #000;\n  -webkit-transition: all 0.5s;\n  -o-transition: all 0.5s;\n  transition: all 0.5s;\n  cursor: pointer; }\n  a:hover {\n    opacity: 0.6; }\n\nimg {\n  max-width: 100%; }\n\nul {\n  margin: 0;\n  padding: 0; }\n\np {\n  color: #656360; }\n", ""]);
 
 
 
@@ -2906,7 +2984,7 @@ exports.push([module.i, ".book-tour {\n  max-width: 360px;\n  margin: auto;\n  m
 
 exports = module.exports = __webpack_require__(1)(false);
 // Module
-exports.push([module.i, ".modal {\n  position: fixed;\n  width: 100%;\n  height: 100vh;\n  background-color: #fff;\n  top: 0;\n  left: 0;\n  z-index: 2;\n  padding: 40px 60px;\n  overflow-y: scroll; }\n  .modal .close {\n    float: right; }\n  .modal .book-tour {\n    margin: 0;\n    margin-left: auto;\n    margin-right: auto; }\n", ""]);
+exports.push([module.i, ".modal {\n  position: fixed;\n  width: 100%;\n  height: 100vh;\n  background-color: #fff;\n  top: 0;\n  left: 0;\n  z-index: 2;\n  overflow-y: scroll;\n  padding: 40px 0; }\n  .modal .close {\n    float: right;\n    margin-right: 40px; }\n  .modal .book-tour {\n    margin: 0;\n    margin-left: auto;\n    margin-right: auto; }\n", ""]);
 
 
 

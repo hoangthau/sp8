@@ -6,11 +6,12 @@
   top: 0;
   left: 0;
   z-index: 2;
-  padding: 40px 60px;
   overflow-y: scroll;
+  padding: 40px 0;
 
   .close {
     float: right;
+    margin-right: 40px;
   }
 
   .book-tour {

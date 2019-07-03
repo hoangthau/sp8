@@ -9,17 +9,22 @@ import Workspace from 'components/Home/Workspace';
 import Book from 'components/Home/Book';
 import Footer from 'components/Footer';
 
-const Home = () => (
-  <React.Fragment>
-    <Header />
-    <Banner />
-    <Innovate />
-    <Feature />
-    <Amenity />
-    <Workspace />
-    <Book />
-    <Footer />
-  </React.Fragment>
-);
+import { set as setLanguage } from 'translate';
+
+const Home = ({ language }) => {
+  setLanguage(language);
+  return (
+    <React.Fragment>
+      <Header />
+      <Banner />
+      <Innovate />
+      <Feature />
+      <Amenity />
+      <Workspace />
+      <Book />
+      <Footer />
+    </React.Fragment>
+  );
+};
 
 export default Home;

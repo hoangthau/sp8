@@ -14,6 +14,7 @@ export default ({ Html, Head, Body, children, routeInfo = {} }) => {
       </head>
 
       <Head>
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600&display=swap" rel="stylesheet" />
         <script
           type="text/javascript"
           src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"

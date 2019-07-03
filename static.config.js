@@ -11,21 +11,10 @@ export default {
         template: 'src/pages/home',
       },
       {
-        path: '/ru',
+        path: '/vi',
         template: 'src/pages/home',
         getData: () => ({
-          language: 'ru',
-        }),
-      },
-      {
-        path: '/about',
-        template: 'src/pages/about',
-      },
-      {
-        path: '/ru/about',
-        template: 'src/pages/about',
-        getData: () => ({
-          language: 'ru',
+          language: 'vi',
         }),
       },
       {

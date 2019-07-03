@@ -4,10 +4,7 @@ import React from 'react';
 // default
 export const languages = [
   'en',
-  'ja',
-  'ko',
-  'zhcn',
-  'zhtw',
+  'vi'
 ];
 // all the languages this app can support
 export const supportedLanguages = languages;
