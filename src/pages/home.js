@@ -10,7 +10,7 @@ const HomePage = ({ language }) => {
       <Head>
         <title>SP8</title>
         <meta name="description" content="SP8" />
-        <meta name="author" content="Quoine" />
+        <meta name="author" content="SP8" />
         <meta name="robots" content="all" />
 
         {/* Facebook */}
@@ -20,20 +20,8 @@ const HomePage = ({ language }) => {
         <meta property="og:image:height" content="315" />
 
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@QuoineGlobal" />
-        <meta name="twitter:creator" content="@QuoineGlobal" />
-
-        <link
-          rel="stylesheet"
-          type="text/css"
-          charset="UTF-8"
-          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
-        />
-        <link
-          rel="stylesheet"
-          type="text/css"
-          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
-        />
+        <meta name="twitter:site" content="@SP8eGlobal" />
+        <meta name="twitter:creator" content="@SP8Global" />
       </Head>
       <Home language={language} />
     </React.Fragment>
