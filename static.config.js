@@ -22,7 +22,7 @@ export default {
         template: 'src/pages/pricing',
       },
       {
-        path: '/vi',
+        path: '/vi/pricing',
         template: 'src/pages/pricing',
         getData: () => ({
           language: 'vi',

@@ -17,7 +17,8 @@ class Book extends React.PureComponent {
     this.setState({ [key]: value });
   }
 
-  submit = () => {
+  submit = (e) => {
+    e.preventDefault();
     const { name, email, phone, size, date } = this.state;
     /* eslint-disable */
     emailjs.init('user_hSSuiJwWoVyM5C3AGFECz');
@@ -37,7 +38,9 @@ class Book extends React.PureComponent {
     var template_id = 'template_MNVDmiDO';
     // Send message using your client
     emailjs.send(service_id, template_id, payload);
-    this.setState({ submitted: true });
+    setTimeout(() => {
+      this.setState({ submitted: true });
+    }, 1000);
   };
 
   render() {
@@ -49,17 +52,19 @@ class Book extends React.PureComponent {
           {this.state.submitted ? (
             <p>Thanks for submitting the form</p>
           ) : (
-            <div>
+            <form onSubmit={(e) => this.submit(e)}>
               <input
                 type="text"
                 name="name"
                 placeholder="Full name"
+                required
                 onChange={e => this.setForm(e)}
               />
               <input
                 type="text"
                 name="email"
                 placeholder="Email address"
+                required
                 onChange={e => this.setForm(e)}
               />
               <input
@@ -82,10 +87,10 @@ class Book extends React.PureComponent {
                   onChange={e => this.setForm(e)}
                 />
               </div>
-              <button onClick={this.submit} className="submit">
+              <button type="submit" className="submit">
                 Submit request
               </button>
-            </div>
+            </form>
           )}
         </div>
       </div>
