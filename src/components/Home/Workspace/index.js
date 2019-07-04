@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 
-import BookModal from 'components/Home/BookModal';
+import Modal from 'components/Home/Modal';
 import Gallery from '../Gallery';
 
 import './Workspace.scss';
@@ -27,12 +27,12 @@ class Workspace extends React.PureComponent {
 
     return (
       <React.Fragment>
-        <BookModal open={this.state.open} className="modal-gallery">
+        <Modal open={this.state.open} className="modal-gallery">
           <button className="close" onClick={this.toggle}>
             Close
           </button>
           <Gallery />
-        </BookModal>
+        </Modal>
         <div className="workspace container">
           <h2>Your new workspace</h2>
           <p>View the SP8 gallery.</p>

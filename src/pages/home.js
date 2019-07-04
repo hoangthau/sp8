@@ -8,8 +8,8 @@ const HomePage = ({ language }) => {
   return (
     <React.Fragment>
       <Head>
-        <title>SP8</title>
-        <meta name="description" content="SP8" />
+        <title>The mono-working space | SP8</title>
+        <meta name="description" content="The mono-working space | SP8" />
         <meta name="author" content="SP8" />
         <meta name="robots" content="all" />
 

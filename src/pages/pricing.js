@@ -2,14 +2,14 @@ import React from 'react';
 
 import { Head, withRouteData } from 'react-static';
 
-import Home from 'components/Home';
+import Pricing from 'components/Pricing';
 
-const HomePage = ({ language }) => {
+const PricingPage = ({ language }) => {
   return (
     <React.Fragment>
       <Head>
-        <title>SP8</title>
-        <meta name="description" content="SP8" />
+        <title>Pricing for your mono-working space | SP8</title>
+        <meta name="description" content="Pricing for your mono-working space | SP8" />
         <meta name="author" content="SP8" />
         <meta name="robots" content="all" />
 
@@ -24,9 +24,9 @@ const HomePage = ({ language }) => {
         <meta name="twitter:creator" content="@SP8Global" />
         />
       </Head>
-      <Home language={language} />
+      <Pricing language={language} />
     </React.Fragment>
   );
 };
 
-export default withRouteData(HomePage);
+export default withRouteData(PricingPage);

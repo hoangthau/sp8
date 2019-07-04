@@ -68,7 +68,7 @@ const Feature = () => (
         </p>
 
         <p>Enjoy flexibility while growing your team.</p>
-        <a>See pricing</a>
+        <a href="/pricing">See pricing</a>
       </div>
     </div>
   </div>

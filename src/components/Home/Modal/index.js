@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Modal.scss';
 
-class BookModal extends React.Component {
+class Modal extends React.Component {
   componentDidUpdate() {
     if (this.props.open) {
       document.body.style.position = 'fixed';
@@ -25,4 +25,4 @@ class BookModal extends React.Component {
   }
 }
 
-export default BookModal;
+export default Modal;

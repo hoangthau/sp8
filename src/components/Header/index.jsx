@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Book from 'components/Home/Book';
-import BookModal from 'components/Home/BookModal';
+import Modal from 'components/Home/Modal';
 import logo from './sp8.svg';
 import './Header.scss';
 
@@ -15,19 +15,23 @@ class Header extends React.PureComponent {
     this.setState({ open: !open });
   };
 
+  goHome = () => {
+    window.location = '/';
+  }
+
   render() {
     return (
       <React.Fragment>
-        <BookModal open={this.state.open}>
+        <Modal open={this.state.open}>
           <button className="close" onClick={this.toggle}>
             Close
           </button>
           <Book />
-        </BookModal>
+        </Modal>
         <div className="header container">
-          <img src={logo} width={59} height={24} alt="logo" />
+          <img onClick={this.goHome} src={logo} width={59} height={24} alt="logo" />
           <div className="header__links">
-            <a className="header__pricing" href="">
+            <a className="header__pricing" href="/pricing">
               Pricing
             </a>
             <button className="header__book" onClick={this.toggle}>

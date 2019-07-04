@@ -25,6 +25,10 @@
   margin-bottom: 40px;
 }
 
+.features-amenity {
+  flex-direction: column-reverse
+}
+
 @media (min-width: 768px) {
   .features {
     .focus-desc,
@@ -35,5 +39,9 @@
 
   .amenity-desc {
     margin-bottom: 0;
+  }
+
+  .features-amenity {
+    flex-direction: row;
   }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 import Book from 'components/Home/Book';
 
-import BookModal from '../BookModal';
+import Modal from '../Modal';
 import './Banner.scss';
 
 import translate from '../translate';
@@ -20,10 +20,10 @@ class Banner extends React.PureComponent {
   render() {
     return (
       <React.Fragment>
-        <BookModal open={this.state.open}>
+        <Modal open={this.state.open}>
           <button className="close" onClick={this.toggle}>Close</button>
           <Book />
-        </BookModal>
+        </Modal>
         <div className="banner container">
           <div className="row">
             <div className="col-md-6 left">
@@ -37,7 +37,7 @@ class Banner extends React.PureComponent {
                 <button className="banner__book" onClick={this.toggle}>
                   Book a tour
                 </button>
-                <a className="banner__pricing" href="#book-a-tour">
+                <a className="banner__pricing" href="/pricing">
                   {translate('seePrice')}
                 </a>
               </div>

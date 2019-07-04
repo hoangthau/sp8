@@ -18,6 +18,17 @@ export default {
         }),
       },
       {
+        path: '/pricing',
+        template: 'src/pages/pricing',
+      },
+      {
+        path: '/vi',
+        template: 'src/pages/pricing',
+        getData: () => ({
+          language: 'vi',
+        }),
+      },
+      {
         path: '404',
         template: 'src/pages/NotFound',
       }
