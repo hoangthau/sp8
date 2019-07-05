@@ -3,7 +3,7 @@ import React from 'react';
 import './Amenity.scss';
 
 const Amenity = () => (
-  <div className="amenity">
+  <div id="amenities" className="amenity">
     <div className="container">
       <h2>The amenities you need</h2>
       <p>You focus on growing your business, let us take care of the rest.</p>

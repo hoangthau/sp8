@@ -5,9 +5,9 @@ import './Modal.scss';
 class Modal extends React.Component {
   componentDidUpdate() {
     if (this.props.open) {
-      document.body.style.position = 'fixed';
+      document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.position = 'static';
+      document.body.style.overflow = 'auto';
     }
   }
 

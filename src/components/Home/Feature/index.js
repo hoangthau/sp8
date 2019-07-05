@@ -25,7 +25,7 @@ const Feature = () => (
           place that long, make sure it’s functional, comfortable and
           delightful.
         </p>
-        <a>View the space</a>
+        <a href="#workspace">View the space</a>
       </div>
     </div>
     <div className="row features-amenity item">
@@ -46,7 +46,7 @@ const Feature = () => (
           Eatery, ran by one of the most innovative teams in the culinary
           industry.
         </p>
-        <a>See all amenities</a>
+        <a href="#amenities">See all amenities</a>
       </div>
       <div className="col-md-6 features-amenity__img">
         <img src='/assets/amenities.jpg' alt="Amenities" />

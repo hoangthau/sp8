@@ -33,7 +33,7 @@ class Workspace extends React.PureComponent {
           </button>
           <Gallery />
         </Modal>
-        <div className="workspace container">
+        <div id="workspace" className="workspace container">
           <h2>Your new workspace</h2>
           <p>View the SP8 gallery.</p>
           <div className="row gallery-overview">
