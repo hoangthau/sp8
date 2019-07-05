@@ -29,6 +29,10 @@
   flex-direction: column-reverse
 }
 
+.features-term {
+  margin-bottom: 0 !important;
+}
+
 @media (min-width: 768px) {
   .features {
     .focus-desc,
