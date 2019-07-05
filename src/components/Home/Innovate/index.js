@@ -11,12 +11,12 @@ const Innovate = () => (
       <div className="col-md-6">
         <p>
           We build the working experience for ambitious small teams and big
-          teams alike. We designed the work space for those who want the best.
+          teams alike. We designed the workspace for those who want the best.
         </p>
         <p>
           SP8 mono-workspace is gorgeous — fully enclosed, blazing fast
           internet. It comes with amenities that make you feel like you are in a
-          coworking space, but with the privacy and focus uniquely for you.
+          coworking space, but with the privacy and focuses uniquely for you.
           Prime location in the heart of the city. Flexible payments. And yes,
           it’s located on top of Esta Eatery. To name a few.
         </p>

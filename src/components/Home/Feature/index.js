@@ -6,18 +6,18 @@ const Feature = () => (
   <div className="features container">
     <div className="row features-focus item">
       <div className="col-md-6 features-focus__img">
-        <img src='/assets/focus.jpg' alt="Amenities" />
+        <img src="/assets/focus.jpg" alt="Amenities" />
       </div>
       <div className="col-md-6 focus-desc">
         <h2>One focus space</h2>
-        <p>We focus on what matters for a winning work space. </p>
+        <p>We focus on what matters for a winning workspace. </p>
 
         <p>
           We’ve designed each room to be a gorgeous, all-in-one unit with
-          individual working stations, brainstorming area and a team-size
+          individual working stations, brainstorming area, and a team-size
           meeting room or a private working booth. A private balcony overlooking
           the beautiful Esta Eatery for those who want a little more air.
-          Bio-lock sensor ensure only your team can access, anytime.
+          Bio-lock sensor ensures only your team can access, anytime.
         </p>
 
         <p>
@@ -36,34 +36,34 @@ const Feature = () => (
           beyond your focus workspace.
         </p>
         <p>
-          Say hi to an all-white, hi-tech conferencing room. Elegant common
-          place to impress your clients. Blazing fast internet. A full-equipped
+          Say hi to an all-white, hi-tech conferencing room. An elegant common
+          space to impress your clients. Blazing fast internet. A full-equipped
           printing station. Coffee, tea and fruit water. Design and marketing
           services. Daily cleaning service to keep your space always sparkly.
         </p>
         <p>
           And what is best if right underneath you is the up-and-coming Easter
-          Eatery, ran by one of the most innovative teams in the culinary
+          Eatery, run by one of the most innovative teams in the culinary
           industry.
         </p>
         <a href="#amenities">See all amenities</a>
       </div>
       <div className="col-md-6 features-amenity__img">
-        <img src='/assets/amenities.jpg' alt="Amenities" />
+        <img src="/assets/amenities.jpg" alt="Amenities" />
       </div>
     </div>
     <div className="row features-term item">
       <div className="col-md-6 features-term__img">
-        <img src='/assets/terms.jpg' alt="Amenities" />
+        <img src="/assets/terms.jpg" alt="Amenities" />
       </div>
       <div className="col-md-6 terms-desc">
         <h2>Flexible terms</h2>
         <p>We focus on giving you the best options to grow.</p>
 
         <p>
-          Leasing option starts from as low as a six month contract. You can pay
-          month-to-month, quarter-by-quarter, or all at once, which ever work
-          best to you. We don’t charge by head count, so as long as you can fit
+          Leasing option starts from as low as a six-month contract. You can pay
+          month-to-month, quarter-by-quarter, or all at once, whichever work
+          best for you. We don’t charge by headcount, so as long as you can fit
           all of your team into your room, just do it.
         </p>
 

@@ -50,3 +50,13 @@ ul {
 p {
   color: #656360;
 }
+
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  div {
+    text-align: center;
+  }
+}
