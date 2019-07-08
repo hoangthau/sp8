@@ -22,7 +22,7 @@
     button {
       border-radius: 4px;
       background-color: #91683d;
-      padding: 16px 32px;
+      padding: 8px 12px;
       margin-top: 32px;
       color: #fff;
     }
@@ -90,3 +90,14 @@
     }
   }
 }
+
+@media(min-width: 992px) {
+  .price-plan {
+    .price {
+      button {
+        padding: 16px 32px;
+      }
+    }
+  }
+}
+

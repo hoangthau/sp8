@@ -34,18 +34,20 @@
 }
 
 @media (min-width: 768px) {
-  .features {
-    .focus-desc,
-    .terms-desc {
-      padding-left: 100px;
-    }
-  }
-
   .amenity-desc {
     margin-bottom: 0;
   }
 
   .features-amenity {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 992px) {
+  .features {
+    .focus-desc,
+    .terms-desc {
+      padding-left: 100px;
+    }
   }
 }

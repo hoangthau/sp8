@@ -5,10 +5,10 @@ import './Innovate.scss';
 const Innovate = () => (
   <div className="innovate container">
     <div className="row">
-      <div className="col-md-4">
+      <div className="col-md-5 col-lg-4">
         <h2>A space to innovate</h2>
       </div>
-      <div className="col-md-6">
+      <div className="col-md-7 col-lg-6">
         <p>
           We build the working experience for ambitious small teams and big
           teams alike. We designed the workspace for those who want the best.
