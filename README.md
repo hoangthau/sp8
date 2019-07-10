@@ -8,4 +8,5 @@ Node: 10.16.x
 Download here: https://nodejs.org/en/
 
 Yarn: 1.16.x 
-`npm install -f yarn`
+
+`npm install -g yarn`
