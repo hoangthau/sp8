@@ -44,7 +44,7 @@ const Feature = () => (
         <p>{translate('flexibleDesc2')}</p>
 
         <p>{translate('flexibleDesc3')}</p>
-        <a href="/pricing">{translate('seePricing')}</a>
+        <a href="pricing">{translate('seePricing')}</a>
       </div>
     </div>
   </div>

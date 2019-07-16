@@ -37,7 +37,7 @@ class Banner extends React.PureComponent {
                 <button className="banner__book" onClick={this.toggle}>
                  {translate('book')}
                 </button>
-                <a className="banner__pricing" href="/pricing">
+                <a className="banner__pricing" href="pricing">
                   {translate('seePrice')}
                 </a>
               </div>

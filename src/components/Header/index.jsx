@@ -2,6 +2,9 @@ import React from 'react';
 
 import Book from 'components/Home/Book';
 import Modal from 'components/Home/Modal';
+import LanguageSelect from 'components/LanguageSelect';
+import { language } from 'translate';
+
 import logo from './sp8.svg';
 import './Header.scss';
 import translate from './translate';
@@ -18,7 +21,7 @@ class Header extends React.PureComponent {
   };
 
   goHome = () => {
-    window.location = '/';
+    window.location = language === 'en' ? '/' : `/${language}/`;
   };
 
   componentDidMount() {
@@ -35,6 +38,7 @@ class Header extends React.PureComponent {
   };
 
   render() {
+    console.log(language);
     return (
       <React.Fragment>
         <Modal open={this.state.open}>
@@ -53,12 +57,16 @@ class Header extends React.PureComponent {
               alt="logo"
             />
             <div className="header__links">
-              <a className="header__pricing" href="/pricing">
-              {translate('pricing')}
+              <a
+                className="header__pricing"
+                href="pricing"
+              >
+                {translate('pricing')}
               </a>
               <button className="header__book" onClick={this.toggle}>
-              {translate('book')}
+                {translate('book')}
               </button>
+              <LanguageSelect />
             </div>
           </div>
         </div>
