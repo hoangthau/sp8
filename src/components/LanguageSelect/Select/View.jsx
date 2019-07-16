@@ -33,7 +33,7 @@ export class SelectView extends React.Component {
       <div className="select">
         <button className="select__active">
           <span>{activeItem.label}</span>
-          <i className="icon icon-small-down" />
+          <span className="select__icon">▼</span>
         </button>
         <div className="select__content">
           {options.map((item, index) => (

@@ -22,7 +22,7 @@
   }
 
   &__pricing {
-    margin: 0 28px;
+    margin: 0 8px;
   }
 
   &__book {
@@ -37,8 +37,16 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   img {
     cursor: pointer;
+  }
+}
+
+@media(min-width: 768px) {
+  .header {
+    &__pricing {
+      padding: 0 28px;
+    }
   }
 }
