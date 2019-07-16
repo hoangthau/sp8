@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './Feature.scss';
+import translate from './translate';
 
 const Feature = () => (
   <div className="features container">
@@ -9,44 +10,24 @@ const Feature = () => (
         <img src="/assets/focus.jpg" alt="Amenities" />
       </div>
       <div className="col-md-6 focus-desc">
-        <h2>One focus space</h2>
-        <p>We focus on what matters for a winning workspace. </p>
+        <h2>{translate('focus')}</h2>
+        <p>{translate('focusDesc1')}</p>
 
-        <p>
-          We’ve designed each room to be a gorgeous, all-in-one unit with
-          individual working stations, brainstorming area, and a team-size
-          meeting room or a private working booth. A private balcony overlooking
-          the beautiful Esta Eatery for those who want a little more air.
-          Bio-lock sensor ensures only your team can access, anytime.
-        </p>
+        <p>{translate('focusDesc2')}</p>
 
-        <p>
-          On average, we spend 8-10 hours a day at an office. When you work in a
-          place that long, make sure it’s functional, comfortable and
-          delightful.
-        </p>
-        <a href="#workspace">View the space</a>
+        <p>{translate('focusDesc3')}</p>
+        <a href="#workspace">{translate('viewSpace')}</a>
       </div>
     </div>
     <div className="row features-amenity item">
       <div className="col-md-6 amenity-desc">
-        <h2>Full amenities</h2>
-        <p>
-          We focus on amenities which matter to you. Everything else you need,
-          beyond your focus workspace.
-        </p>
-        <p>
-          Say hi to an all-white, hi-tech conferencing room. An elegant common
-          space to impress your clients. Blazing fast internet. A full-equipped
-          printing station. Coffee, tea and fruit water. Design and marketing
-          services. Daily cleaning service to keep your space always sparkly.
-        </p>
-        <p>
-          And what is best if right underneath you is the up-and-coming Easter
-          Eatery, run by one of the most innovative teams in the culinary
-          industry.
-        </p>
-        <a href="#amenities">See all amenities</a>
+        <h2>{translate('amenities')}</h2>
+        <p>{translate('amenitiesDesc1')}</p>
+
+        <p>{translate('amenitiesDesc2')}</p>
+
+        <p>{translate('amenitiesDesc3')}</p>
+        <a href="#amenities">{translate('viewAmenities')}</a>
       </div>
       <div className="col-md-6 features-amenity__img">
         <img src="/assets/amenities.jpg" alt="Amenities" />
@@ -57,18 +38,13 @@ const Feature = () => (
         <img src="/assets/terms.jpg" alt="Amenities" />
       </div>
       <div className="col-md-6 terms-desc">
-        <h2>Flexible terms</h2>
-        <p>We focus on giving you the best options to grow.</p>
+        <h2>{translate('flexible')}</h2>
+        <p>{translate('flexibleDesc1')}</p>
 
-        <p>
-          Leasing option starts from as low as a six-month contract. You can pay
-          month-to-month, quarter-by-quarter, or all at once, whichever work
-          best for you. We don’t charge by headcount, so as long as you can fit
-          all of your team into your room, just do it.
-        </p>
+        <p>{translate('flexibleDesc2')}</p>
 
-        <p>Enjoy flexibility while growing your team.</p>
-        <a href="/pricing">See pricing</a>
+        <p>{translate('flexibleDesc3')}</p>
+        <a href="/pricing">{translate('seePricing')}</a>
       </div>
     </div>
   </div>

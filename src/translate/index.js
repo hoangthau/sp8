@@ -22,7 +22,7 @@ export const set = (value) => {
   }
 };
 
-const tags = ['<br />', '<br/>', '<a', '<span', '<strong'];
+const tags = ['<br />', '<br/>', '<a', '<span', '<strong', '<b'];
 
 const translate = (translation, filename) => (
   (key, template) => {

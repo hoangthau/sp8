@@ -1,6 +1,8 @@
 import React from 'react';
 import './Book.scss';
 
+import translate from './translate';
+
 class Book extends React.PureComponent {
   state = {
     name: '',
@@ -47,8 +49,8 @@ class Book extends React.PureComponent {
     return (
       <div className="container">
         <div className="book-tour">
-          <h2>Book a tour today</h2>
-          <p>Schedule a visit with us.</p>
+          <h2>{translate('title')}</h2>
+          <p>{translate('desc')}</p>
           {this.state.submitted ? (
             <p>Thanks for submitting the form</p>
           ) : (
@@ -56,39 +58,39 @@ class Book extends React.PureComponent {
               <input
                 type="text"
                 name="name"
-                placeholder="Full name"
+                placeholder={translate('name')}
                 required
                 onChange={e => this.setForm(e)}
               />
               <input
                 type="text"
                 name="email"
-                placeholder="Email address"
+                placeholder={translate('email')}
                 required
                 onChange={e => this.setForm(e)}
               />
               <input
                 type="text"
                 name="phone"
-                placeholder="Phone number"
+                placeholder={translate('phone')}
                 onChange={e => this.setForm(e)}
               />
               <div className="input-group">
                 <input
                   type="text"
                   name="date"
-                  placeholder="Move-in date"
+                  placeholder={translate('moveDate')}
                   onChange={e => this.setForm(e)}
                 />
                 <input
                   type="number"
                   name="size"
-                  placeholder="Team size"
+                  placeholder={translate('size')}
                   onChange={e => this.setForm(e)}
                 />
               </div>
               <button type="submit" className="submit">
-                Submit request
+              {translate('submit')}
               </button>
             </form>
           )}

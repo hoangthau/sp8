@@ -1,30 +1,23 @@
 import React from 'react';
 
 import './Footer.scss';
+import translate from './translate';
 
 const Footer = () => (
   <div className="footer">
     <div className="container">
       <div className="row">
         <div className="col-md-4">
-          <h3>About SP8</h3>
-          <p>
-            SP8 provides small teams with a platform to grow with a network of
-            designed-to-focus working spaces.
-          </p>
+          <h3>{translate('aboutSP8')}</h3>
+          <p>{translate('aboutSP8Desc')}</p>
         </div>
         <div className="col-md-4">
-          <h3>About Establishment</h3>
-          <p>
-            Establishment is the operator of SP8, Esta Eatery and Establishment
-            XXV.
-          </p>
+          <h3>{translate('establishment')}</h3>
+          <p>{translate('establishmentDesc')}</p>
         </div>
         <div className="col-md-4">
-          <h3>Contact Us</h3>
-          <p>
-            18Bis/16 Nguyen Thi Minh Khai, Da Kao, District 1, Ho Chi Minh City.
-          </p>
+          <h3> {translate('contact')}</h3>
+          <p>{translate('contactDesc')}</p>
           <p>hello@workinsp8.co</p>
           <p>
             (+84) 899 898 363 (Matt) <br />

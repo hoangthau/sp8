@@ -5,7 +5,7 @@ import Book from 'components/Home/Book';
 import Modal from '../Modal';
 import './Banner.scss';
 
-import translate from '../translate';
+import translate from './translate';
 
 class Banner extends React.PureComponent {
   state = {
@@ -22,7 +22,7 @@ class Banner extends React.PureComponent {
       <React.Fragment>
         <Modal open={this.state.open}>
           <button className="close" onClick={this.toggle}>
-            Close
+            {translate('close')}
           </button>
           <Book />
         </Modal>
@@ -30,14 +30,12 @@ class Banner extends React.PureComponent {
           <div className="row">
             <div className="col-md-6 left">
               <div>
-                <h1>The mono-working space</h1>
+                <h1>{translate('title')}</h1>
                 <p>
-                  Enjoy all the amenities of professional working space with the
-                  focus of a private office — reimagined in a gorgeously
-                  designed workspace.
+                  {translate('desc')}
                 </p>
                 <button className="banner__book" onClick={this.toggle}>
-                  Book a tour
+                 {translate('book')}
                 </button>
                 <a className="banner__pricing" href="/pricing">
                   {translate('seePrice')}

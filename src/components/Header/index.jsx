@@ -4,6 +4,7 @@ import Book from 'components/Home/Book';
 import Modal from 'components/Home/Modal';
 import logo from './sp8.svg';
 import './Header.scss';
+import translate from './translate';
 
 class Header extends React.PureComponent {
   state = {
@@ -38,7 +39,7 @@ class Header extends React.PureComponent {
       <React.Fragment>
         <Modal open={this.state.open}>
           <button className="close" onClick={this.toggle}>
-            Close
+            {translate('close')}
           </button>
           <Book />
         </Modal>
@@ -53,10 +54,10 @@ class Header extends React.PureComponent {
             />
             <div className="header__links">
               <a className="header__pricing" href="/pricing">
-                Pricing
+              {translate('pricing')}
               </a>
               <button className="header__book" onClick={this.toggle}>
-                Book a tour
+              {translate('book')}
               </button>
             </div>
           </div>

@@ -4,6 +4,7 @@ import Book from 'components/Home/Book';
 import Modal from 'components/Home/Modal';
 
 import './Plans.scss';
+import translate from './translate';
 
 class Plans extends React.PureComponent {
   state = {
@@ -20,7 +21,7 @@ class Plans extends React.PureComponent {
       <React.Fragment>
         <Modal open={this.state.open}>
           <button className="close" onClick={this.toggle}>
-            Close
+            {translate('close')}
           </button>
           <Book />
         </Modal>
@@ -30,26 +31,26 @@ class Plans extends React.PureComponent {
               <div className="col-md-4">
                 <div className="plan-col">
                   <div className="price">
-                    <h4>6-month</h4>
-                    <p>Our most flexible plan</p>
+                    <h4>{translate('month6')}</h4>
+                    <p>{translate('month6Desc')}</p>
                     <h2>$2,000</h2>
-                    <p>starting, per month (conditions applied)</p>
-                    <button onClick={this.toggle}>Book a tour</button>
+                    <p>{translate('starting')}</p>
+                    <button onClick={this.toggle}>{translate('book')}</button>
                   </div>
                   <div className="includes">
-                    <h4>Includes:</h4>
-                    <p>All amenities</p>
+                    <h4>{translate('includes')}:</h4>
+                    <p>{translate('allAmenities')}</p>
                     <p>
-                      <b>Free</b> daily cleaning services
+                      <b>{translate('free')}</b> {translate('cleaning')}
                     </p>
                     <p>
-                      <b>Free</b> printing quota
+                      <b>{translate('free')}</b> {translate('printing')}
                     </p>
                     <p>
-                      <b>Free</b> coffee and tea (8AM - 5PM)
+                      <b>{translate('free')}</b> {translate('coffee')}
                     </p>
                     <p>
-                      <b>Free</b> craft beer (4PM - 6PM)
+                      <b>{translate('free')}</b> {translate('beer')}
                     </p>
                   </div>
                 </div>
@@ -57,30 +58,30 @@ class Plans extends React.PureComponent {
               <div className="col-md-4">
                 <div className="plan-col">
                   <div className="price price-12">
-                    <h4>12-month</h4>
-                    <p>Unlock extra perks</p>
+                    <h4>{translate('month12')}</h4>
+                    <p>{translate('month12Desc')}</p>
                     <h2>$1,600</h2>
-                    <p>starting, per month (conditions applied)</p>
-                    <button onClick={this.toggle}>Book a tour</button>
+                    <p>{translate('starting')}</p>
+                    <button onClick={this.toggle}>{translate('book')}</button>
                   </div>
                   <div className="includes">
-                    <h4>Includes:</h4>
-                    <p>All amenities</p>
+                    <h4>{translate('includes')}:</h4>
+                    <p>{translate('allAmenities')}</p>
                     <p>
-                      <b>Free</b> daily cleaning services
+                      <b>{translate('free')}</b> {translate('cleaning')}
                     </p>
                     <p>
-                      <b>Free</b> printing quota
+                      <b>{translate('free')}</b> {translate('printing')}
                     </p>
                     <p>
-                      <b>Free</b> coffee and tea (8AM - 5PM)
+                      <b>{translate('free')}</b> {translate('coffee')}
                     </p>
                     <p>
-                      <b>Free</b> craft beer (4PM - 6PM)
+                      <b>{translate('free')}</b> {translate('beer')}
                     </p>
-                    <h4 className="plus">Plus:</h4>
+                    <h4 className="plus">{translate('plus')}:</h4>
                     <p>
-                      <span className="brown">Esta Eatery</span> Membership
+                      {translate('esta')}
                     </p>
                   </div>
                 </div>
@@ -88,33 +89,33 @@ class Plans extends React.PureComponent {
               <div className="col-md-4">
                 <div className="plan-col">
                   <div className="price price-24">
-                    <h4>24-month</h4>
-                    <p>Exclusive benefits</p>
+                    <h4>{translate('month24')}</h4>
+                    <p>{translate('month24Desc')}</p>
                     <h2>$1,300</h2>
-                    <p>starting, per month (conditions applied)</p>
-                    <button onClick={this.toggle}>Book a tour</button>
+                    <p>{translate('starting')}</p>
+                    <button onClick={this.toggle}>{translate('book')}</button>
                   </div>
                   <div className="includes">
-                    <h4>Includes:</h4>
-                    <p>All amenities</p>
+                    <h4>{translate('includes')}:</h4>
+                    <p>{translate('allAmenities')}</p>
                     <p>
-                      <b>Free</b> daily cleaning services
+                      <b>{translate('free')}</b> {translate('cleaning')}
                     </p>
                     <p>
-                      <b>Free</b> printing quota
+                      <b>{translate('free')}</b> {translate('printing')}
                     </p>
                     <p>
-                      <b>Free</b> coffee and tea (8AM - 5PM)
+                      <b>{translate('free')}</b> {translate('coffee')}
                     </p>
                     <p>
-                      <b>Free</b> craft beer (4PM - 6PM)
+                      <b>{translate('free')}</b> {translate('beer')}
                     </p>
-                    <h4 className="plus">Plus:</h4>
+                    <h4 className="plus">{translate('plus')}:</h4>
                     <p>
-                      <span className="brown">Esta Eatery</span> Membership
+                     {translate('esta')}
                     </p>
                     <p>
-                      <b>Establishment XXV</b> Membership
+                    {translate('xxv')}
                     </p>
                   </div>
                 </div>

@@ -5,6 +5,7 @@ import Modal from 'components/Home/Modal';
 import Gallery from '../Gallery';
 
 import './Workspace.scss';
+import translate from './translate';
 
 class Workspace extends React.PureComponent {
   state = {
@@ -29,16 +30,16 @@ class Workspace extends React.PureComponent {
       <React.Fragment>
         <Modal open={this.state.open} className="modal-gallery">
           <button className="close" onClick={this.toggle}>
-            Close
+            {translate('close')}
           </button>
           <Gallery />
         </Modal>
         <div id="workspace" className="workspace container">
-          <h2>Your new workspace</h2>
-          <p>View the SP8 gallery.</p>
+          <h2> {translate('title')}</h2>
+          <p> {translate('desc')}</p>
           <div className="row gallery-overview">
             <div className="col-md-6 left">
-              <img src='/assets/banner.jpg' alt="left" />
+              <img src="/assets/banner.jpg" alt="left" />
             </div>
             <div className="col-md-6 right">
               <div className="right-1" />
@@ -47,28 +48,28 @@ class Workspace extends React.PureComponent {
           </div>
           <div className="slider-mobile">
             <Slider {...settings}>
-            <div>
-            <img src='/assets/amenities.jpg' alt="img" />
-          </div>
-          <div>
-            <img src='/assets/focus.jpg' alt="img" />
-          </div>
-          <div>
-            <img src='/assets/terms.jpg' alt="img" />
-          </div>
-          <div>
-            <img src='/assets/amenities.jpg' alt="img" />
-          </div>
-          <div>
-            <img src='/assets/focus.jpg' alt="img" />
-          </div>
-          <div>
-            <img src='/assets/terms.jpg' alt="img" />
-          </div>
+              <div>
+                <img src="/assets/amenities.jpg" alt="img" />
+              </div>
+              <div>
+                <img src="/assets/focus.jpg" alt="img" />
+              </div>
+              <div>
+                <img src="/assets/terms.jpg" alt="img" />
+              </div>
+              <div>
+                <img src="/assets/amenities.jpg" alt="img" />
+              </div>
+              <div>
+                <img src="/assets/focus.jpg" alt="img" />
+              </div>
+              <div>
+                <img src="/assets/terms.jpg" alt="img" />
+              </div>
             </Slider>
           </div>
           <button className="view-photos" onClick={this.toggle}>
-            View photos
+            {translate('viewPhoto')}
           </button>
         </div>
       </React.Fragment>
