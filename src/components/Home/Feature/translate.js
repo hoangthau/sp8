@@ -26,8 +26,8 @@ export default translate({
     vi: 'Hình ảnh'
   },
   amenities: {
-    en: 'One focus space',
-    vi: 'Không chỉ là văn phòng'
+    en: 'Full amenities',
+    vi: 'Tiện ích đầy đủ'
   },
   amenitiesDesc1: {
     en:

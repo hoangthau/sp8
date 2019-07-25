@@ -11,8 +11,7 @@ import translate from './translate';
 
 class Header extends React.PureComponent {
   state = {
-    open: false,
-    scrolled: false
+    open: false
   };
 
   toggle = () => {
@@ -24,21 +23,7 @@ class Header extends React.PureComponent {
     window.location = language === 'en' ? '/' : `/${language}/`;
   };
 
-  componentDidMount() {
-    document.addEventListener('scroll', this.scrollHandler);
-  }
-
-  componentWillUnmount() {
-    document.removeEventListener('scroll', this.scrollHandler);
-  }
-
-  scrollHandler = () => {
-    const scrollTop = window.scrollY || 0;
-    this.setState({ scrolled: !!scrollTop });
-  };
-
   render() {
-    console.log(language);
     return (
       <React.Fragment>
         <Modal open={this.state.open}>
@@ -47,7 +32,7 @@ class Header extends React.PureComponent {
           </button>
           <Book />
         </Modal>
-        <div className={`header ${this.state.scrolled ? 'scrolled' : ''}`}>
+        <div className="header">
           <div className="container">
             <img
               onClick={this.goHome}
